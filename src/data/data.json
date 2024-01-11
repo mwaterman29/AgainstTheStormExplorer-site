@@ -1643,8 +1643,8 @@
     {
       "id": "Wood",
       "label": "Wood",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [],
+      "usesSecond": [],
       "producedBy": [
         "Woodcutters Camp:T0"
       ],
@@ -1685,8 +1685,8 @@
     {
       "id": "Plant Fiber",
       "label": "Plant Fiber",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [],
+      "usesSecond": [],
       "producedBy": [
         "Plantation:T0",
         "Harvester Camp:T0",
@@ -1703,8 +1703,10 @@
     {
       "id": "Reed",
       "label": "Reed",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Clearance Water"
+      ],
+      "usesSecond": [],
       "producedBy": [
         "Harvester Camp:T0",
         "Clay Pit Workshop:T2"
@@ -1721,8 +1723,13 @@
     {
       "id": "Leather",
       "label": "Leather",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Plant Fiber",
+        "Reed",
+        "Grain",
+        "Vegetables"
+      ],
+      "usesSecond": [],
       "producedBy": [
         "Ranch:T1"
       ],
@@ -1757,8 +1764,10 @@
     {
       "id": "Clay",
       "label": "Clay",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Clearance Water"
+      ],
+      "usesSecond": [],
       "producedBy": [
         "Stonecutter's Camp:T0",
         "Clay Pit Workshop:T2"
@@ -1773,8 +1782,8 @@
     {
       "id": "Stone",
       "label": "Stone",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [],
+      "usesSecond": [],
       "producedBy": [
         "Stonecutter's Camp:T0"
       ],
@@ -1807,8 +1816,15 @@
     {
       "id": "Copper Bars",
       "label": "Copper Bars",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Copper Ore"
+      ],
+      "usesSecond": [
+        "Wood",
+        "Oil",
+        "Coal",
+        "Sea Marrow"
+      ],
       "producedBy": [
         "Grill:T1",
         "Furnace:T2",
@@ -1828,8 +1844,16 @@
     {
       "id": "Crystalized Dew",
       "label": "Crystalized Dew",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Herbs",
+        "Insects",
+        "Resin",
+        "Vegetables"
+      ],
+      "usesSecond": [
+        "Stone",
+        "Clay"
+      ],
       "producedBy": [
         "Grove:T0",
         "Beanery:T1",
@@ -1864,8 +1888,8 @@
     {
       "id": "Roots",
       "label": "Roots",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [],
+      "usesSecond": [],
       "producedBy": [
         "Hallowed Herb Garden:T0",
         "Herb Garden:T0",
@@ -1886,8 +1910,8 @@
     {
       "id": "Grain",
       "label": "Grain",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [],
+      "usesSecond": [],
       "producedBy": [
         "Hallowed SmallFarm:T0",
         "SmallFarm:T0",
@@ -1909,8 +1933,8 @@
     {
       "id": "Vegetables",
       "label": "Vegetables",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [],
+      "usesSecond": [],
       "producedBy": [
         "Hallowed SmallFarm:T0",
         "SmallFarm:T0",
@@ -1932,8 +1956,10 @@
     {
       "id": "Mushrooms",
       "label": "Mushrooms",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Drizzle Water"
+      ],
+      "usesSecond": [],
       "producedBy": [
         "Herbalist's Camp:T0",
         "Primitive Herbalist's Camp:T0",
@@ -1971,8 +1997,10 @@
     {
       "id": "Herbs",
       "label": "Herbs",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Drizzle Water"
+      ],
+      "usesSecond": [],
       "producedBy": [
         "Hallowed Herb Garden:T0",
         "Herb Garden:T0",
@@ -1993,8 +2021,8 @@
     {
       "id": "Berries",
       "label": "Berries",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [],
+      "usesSecond": [],
       "producedBy": [
         "Plantation:T0",
         "Herbalist's Camp:T0",
@@ -2014,8 +2042,8 @@
     {
       "id": "Insects",
       "label": "Insects",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [],
+      "usesSecond": [],
       "producedBy": [
         "Trapper's Camp:T0",
         "Primitive Trapper's Camp:T0"
@@ -2034,8 +2062,13 @@
     {
       "id": "Meat",
       "label": "Meat",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Plant Fiber",
+        "Reed",
+        "Grain",
+        "Vegetables"
+      ],
+      "usesSecond": [],
       "producedBy": [
         "Ranch:T1",
         "Trapper's Camp:T0",
@@ -2053,8 +2086,13 @@
     {
       "id": "Eggs",
       "label": "Eggs",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Grain",
+        "Insects",
+        "Reed",
+        "Berries"
+      ],
+      "usesSecond": [],
       "producedBy": [
         "Ranch:T1",
         "Trapper's Camp:T0",
@@ -2088,8 +2126,8 @@
     {
       "id": "Copper Ore",
       "label": "Copper Ore",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [],
+      "usesSecond": [],
       "producedBy": [
         "Mine:T0"
       ],
@@ -2120,8 +2158,13 @@
     {
       "id": "Oil",
       "label": "Oil",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Grain",
+        "Meat",
+        "Vegetables",
+        "Plant Fiber"
+      ],
+      "usesSecond": [],
       "producedBy": [
         "Butcher:T2",
         "Press:T3",
@@ -2143,8 +2186,10 @@
     {
       "id": "Coal",
       "label": "Coal",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Wood"
+      ],
+      "usesSecond": [],
       "producedBy": [
         "Mine:T0",
         "Brick Oven:T1",
@@ -2164,8 +2209,8 @@
     {
       "id": "Sea Marrow",
       "label": "Sea Marrow",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [],
+      "usesSecond": [],
       "producedBy": [
         "Stonecutter's Camp:T0"
       ],
@@ -2296,8 +2341,12 @@
     {
       "id": "Flour",
       "label": "Flour",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Grain",
+        "Mushrooms",
+        "Roots"
+      ],
+      "usesSecond": [],
       "producedBy": [
         "Flawless Rain Mill:T3",
         "Rain Mill:T3",
@@ -2336,8 +2385,15 @@
     {
       "id": "Pottery",
       "label": "Pottery",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Clay"
+      ],
+      "usesSecond": [
+        "Wood",
+        "Oil",
+        "Coal",
+        "Sea Marrow"
+      ],
       "producedBy": [
         "Bakery:T2",
         "Smokehouse:T1",
@@ -2354,8 +2410,13 @@
     {
       "id": "Barrels",
       "label": "Barrels",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Copper Bars",
+        "Crystalized Dew"
+      ],
+      "usesSecond": [
+        "Planks"
+      ],
       "producedBy": [
         "Cooperage:T3",
         "Flawless Cooperage:T3",
@@ -2374,8 +2435,13 @@
     {
       "id": "Waterskins",
       "label": "Waterskins",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Leather"
+      ],
+      "usesSecond": [
+        "Oil",
+        "Meat"
+      ],
       "producedBy": [
         "Clothier:T1",
         "Flawless Leatherworks:T3",
@@ -2419,8 +2485,13 @@
     {
       "id": "Pigment",
       "label": "Pigment",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Insects",
+        "Berries",
+        "Copper Ore",
+        "Coal"
+      ],
+      "usesSecond": [],
       "producedBy": [
         "Cookhouse:T2",
         "Flawless Leatherworks:T3",
@@ -2437,8 +2508,16 @@
     {
       "id": "Wine",
       "label": "Wine",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Berries",
+        "Mushrooms",
+        "Reed"
+      ],
+      "usesSecond": [
+        "Pottery",
+        "Barrels",
+        "Waterskins"
+      ],
       "producedBy": [
         "Cellar:T3",
         "Flawless Cellar:T3",
@@ -2580,8 +2659,15 @@
     {
       "id": "Training Gear",
       "label": "Training Gear",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Stone",
+        "Copper Bars",
+        "Crystalized Dew"
+      ],
+      "usesSecond": [
+        "Planks",
+        "Reed"
+      ],
       "producedBy": [
         "Weaver:T1",
         "Flawless Smelter:T3",
@@ -2596,8 +2682,18 @@
     {
       "id": "Incense",
       "label": "Incense",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Herbs",
+        "Roots",
+        "Insects",
+        "Resin"
+      ],
+      "usesSecond": [
+        "Wood",
+        "Oil",
+        "Coal",
+        "Sea Marrow"
+      ],
       "producedBy": [
         "Smokehouse:T1",
         "Brick Oven:T1",
@@ -2612,8 +2708,15 @@
     {
       "id": "Ale",
       "label": "Ale",
-      "usesFirst": null,
-      "usesSecond": null,
+      "usesFirst": [
+        "Grain",
+        "Roots"
+      ],
+      "usesSecond": [
+        "Pottery",
+        "Barrels",
+        "Waterskins"
+      ],
       "producedBy": [
         "Grill:T1",
         "Brewery:T3",

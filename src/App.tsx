@@ -44,6 +44,10 @@ function App() {
     })
   }
 
+  function updateSelected(selected: any) {
+    setSelected(selected);
+  }
+
   return (
     <div className='h-screen w-screen'>
       <div className='flex flex-row w-full h-[10%] bg-gray-400'>
@@ -61,6 +65,7 @@ function App() {
           </div>
           <div className='h-full w-1/4 p-2'>
             <InfoPanel
+              updateSelected={updateSelected}
               type={selected.type}
               id={selected.id}
              />
