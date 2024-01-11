@@ -1643,10 +1643,44 @@
     {
       "id": "Wood",
       "label": "Wood",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Woodcutters Camp:T0"
+        "Crude Workstation:T0",
+        "Blight Post:T0",
+        "Workshop:T2",
+        "Field Kitchen:T0",
+        "Lumbermill:T3",
+        "Lumbermill:T1",
+        "Bakery:T2",
+        "Carpenter:T2",
+        "Clothier:T1",
+        "Smokehouse:T3",
+        "Smokehouse:T1",
+        "Brick Oven:T1",
+        "Brickyard:T2",
+        "Grill:T1",
+        "Kiln:T3",
+        "Kiln:T1",
+        "Butcher:T2",
+        "Furnace:T2",
+        "Cellar:T1",
+        "Flawless Cellar:T3",
+        "Flawless Rain Mill:T3",
+        "Rain Mill:T1",
+        "Stamping Mill:T3",
+        "Stamping Mill:T1",
+        "Flawless Smelter:T3",
+        "Smelter:T3",
+        "Smithy:T2",
+        "Toolshop:T3",
+        "Apothecary:T2",
+        "Druid:T1",
+        "Flawless Druid:T3",
+        "Tinkerer:T2",
+        "Supplier:T2",
+        "Scribe:T3",
+        "Scribe:T1",
+        "Finesmith:T3",
+        "Rainpunk Foundry:T0"
       ],
       "usedIn": [
         "Planks",
@@ -1662,35 +1696,25 @@
       ]
     },
     {
-      "id": "Planks",
-      "label": "Planks",
-      "usesFirst": [
-        "Wood"
-      ],
-      "usesSecond": [],
+      "id": "Plant Fiber",
+      "label": "Plant Fiber",
       "producedBy": [
         "Crude Workstation:T0",
         "Workshop:T2",
-        "Lumbermill:T3",
-        "Carpenter:T2",
-        "Supplier:T2"
-      ],
-      "usedIn": [
-        "Pack of Building Materials",
-        "Barrels",
-        "Tools",
-        "Training Gear"
-      ]
-    },
-    {
-      "id": "Plant Fiber",
-      "label": "Plant Fiber",
-      "usesFirst": null,
-      "usesSecond": null,
-      "producedBy": [
-        "Plantation:T0",
-        "Harvester Camp:T0",
-        "Homestead:T0"
+        "Lumbermill:T1",
+        "Ranch:T1",
+        "Weaver:T3",
+        "Clothier:T1",
+        "Flawless Leatherworks:T3",
+        "Granary:T2",
+        "Leatherworks:T2",
+        "Butcher:T2",
+        "Flawless Rain Mill:T3",
+        "Rain Mill:T1",
+        "Press:T3",
+        "Druid:T3",
+        "Flawless Druid:T3",
+        "Scribe:T3"
       ],
       "usedIn": [
         "Fabric",
@@ -1703,11 +1727,24 @@
     {
       "id": "Reed",
       "label": "Reed",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Harvester Camp:T0",
-        "Clay Pit Workshop:T2"
+        "Crude Workstation:T0",
+        "Workshop:T2",
+        "Ranch:T1",
+        "Weaver:T3",
+        "Weaver:T1",
+        "Flawless Leatherworks:T3",
+        "Granary:T2",
+        "Leatherworks:T2",
+        "Cellar:T3",
+        "Flawless Cellar:T3",
+        "Flawless Smelter:T3",
+        "Smelter:T2",
+        "Alchemist Hut:T2",
+        "Distillery:T2",
+        "Tinctury:T2",
+        "Tinkerer:T2",
+        "Manufactory:T2"
       ],
       "usedIn": [
         "Fabric",
@@ -1721,10 +1758,21 @@
     {
       "id": "Leather",
       "label": "Leather",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Ranch:T1"
+        "Crude Workstation:T0",
+        "Workshop:T2",
+        "Lumbermill:T1",
+        "Weaver:T3",
+        "Clothier:T1",
+        "Flawless Leatherworks:T3",
+        "Granary:T2",
+        "Leatherworks:T3",
+        "Leatherworks:T2",
+        "Flawless Rain Mill:T3",
+        "Rain Mill:T1",
+        "Tea House:T1",
+        "Supplier:T2",
+        "Scribe:T3"
       ],
       "usedIn": [
         "Fabric",
@@ -1733,35 +1781,22 @@
       ]
     },
     {
-      "id": "Fabric",
-      "label": "Fabric",
-      "usesFirst": [
-        "Plant Fiber",
-        "Reed",
-        "Leather"
-      ],
-      "usesSecond": [],
+      "id": "Clay",
+      "label": "Clay",
       "producedBy": [
         "Crude Workstation:T0",
         "Workshop:T2",
-        "Weaver:T3",
-        "Flawless Leatherworks:T3",
-        "Granary:T2",
-        "Leatherworks:T2"
-      ],
-      "usedIn": [
-        "Pack of Building Materials",
-        "Coats"
-      ]
-    },
-    {
-      "id": "Clay",
-      "label": "Clay",
-      "usesFirst": null,
-      "usesSecond": null,
-      "producedBy": [
-        "Stonecutter's Camp:T0",
-        "Clay Pit Workshop:T2"
+        "Bakery:T2",
+        "Beanery:T1",
+        "Smokehouse:T1",
+        "Brickyard:T3",
+        "Brickyard:T2",
+        "Brickyard:T1",
+        "Kiln:T1",
+        "Furnace:T2",
+        "Stamping Mill:T3",
+        "Alchemist Hut:T2",
+        "Rainpunk Foundry:T0"
       ],
       "usedIn": [
         "Bricks",
@@ -1773,10 +1808,21 @@
     {
       "id": "Stone",
       "label": "Stone",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Stonecutter's Camp:T0"
+        "Crude Workstation:T0",
+        "Workshop:T2",
+        "Beanery:T1",
+        "Weaver:T1",
+        "Brickyard:T3",
+        "Brickyard:T1",
+        "Kiln:T1",
+        "Furnace:T2",
+        "Flawless Smelter:T3",
+        "Smelter:T2",
+        "Alchemist Hut:T2",
+        "Tinkerer:T2",
+        "Manufactory:T2",
+        "Rainpunk Foundry:T0"
       ],
       "usedIn": [
         "Bricks",
@@ -1786,35 +1832,30 @@
       ]
     },
     {
-      "id": "Bricks",
-      "label": "Bricks",
-      "usesFirst": [
-        "Clay",
-        "Stone"
-      ],
-      "usesSecond": [],
-      "producedBy": [
-        "Crude Workstation:T0",
-        "Workshop:T2",
-        "Brickyard:T3",
-        "Kiln:T1",
-        "Furnace:T2"
-      ],
-      "usedIn": [
-        "Pack of Building Materials"
-      ]
-    },
-    {
       "id": "Copper Bars",
       "label": "Copper Bars",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Grill:T1",
-        "Furnace:T2",
-        "Stamping Mill:T1",
+        "Crude Workstation:T0",
+        "Workshop:T0",
+        "Cooperage:T3",
+        "Flawless Cooperage:T3",
+        "Carpenter:T2",
+        "Weaver:T1",
+        "Provisioner:T2",
         "Flawless Smelter:T3",
-        "Smelter:T3"
+        "Smelter:T2",
+        "Smithy:T2",
+        "Toolshop:T3",
+        "Toolshop:T2",
+        "Toolshop:T1",
+        "Artisan:T2",
+        "Distillery:T2",
+        "Tinkerer:T2",
+        "Manufactory:T2",
+        "Scribe:T1",
+        "Finesmith:T3",
+        "Rainpunk Foundry:T0",
+        "Rainpunk Foundry:T3"
       ],
       "usedIn": [
         "Pipes",
@@ -1828,13 +1869,28 @@
     {
       "id": "Crystalized Dew",
       "label": "Crystalized Dew",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Grove:T0",
-        "Beanery:T1",
-        "Brickyard:T1",
-        "Alchemist Hut:T2"
+        "Crude Workstation:T0",
+        "Workshop:T0",
+        "Cooperage:T3",
+        "Flawless Cooperage:T3",
+        "Carpenter:T2",
+        "Weaver:T1",
+        "Provisioner:T2",
+        "Flawless Smelter:T3",
+        "Smelter:T2",
+        "Smithy:T2",
+        "Toolshop:T3",
+        "Toolshop:T2",
+        "Toolshop:T1",
+        "Artisan:T2",
+        "Distillery:T2",
+        "Tinkerer:T2",
+        "Manufactory:T2",
+        "Scribe:T1",
+        "Finesmith:T3",
+        "Rainpunk Foundry:T0",
+        "Rainpunk Foundry:T3"
       ],
       "usedIn": [
         "Pipes",
@@ -1846,31 +1902,42 @@
       ]
     },
     {
-      "id": "Pipes",
-      "label": "Pipes",
-      "usesFirst": [
-        "Copper Bars",
-        "Crystalized Dew"
-      ],
-      "usesSecond": [],
-      "producedBy": [
-        "Crude Workstation:T0",
-        "Workshop:T0",
-        "Smithy:T2",
-        "Toolshop:T2"
-      ],
-      "usedIn": []
-    },
-    {
       "id": "Roots",
       "label": "Roots",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Hallowed Herb Garden:T0",
-        "Herb Garden:T0",
-        "Forager's Camp:T0",
-        "Primitive Forager's Camp:T0"
+        "Makeshift Post:T0",
+        "Field Kitchen:T0",
+        "Cooperage:T1",
+        "Flawless Cooperage:T3",
+        "Bakery:T2",
+        "Beanery:T1",
+        "Cookhouse:T2",
+        "Smokehouse:T1",
+        "Granary:T2",
+        "Brick Oven:T1",
+        "Grill:T3",
+        "Grill:T1",
+        "Butcher:T2",
+        "Cellar:T1",
+        "Flawless Cellar:T3",
+        "Flawless Rain Mill:T3",
+        "Rain Mill:T3",
+        "Press:T1",
+        "Provisioner:T2",
+        "Stamping Mill:T2",
+        "Flawless Smelter:T3",
+        "Smelter:T1",
+        "Alchemist Hut:T2",
+        "Apothecary:T2",
+        "Tea House:T3",
+        "Brewery:T3",
+        "Brewery:T1",
+        "Flawless Brewery:T3",
+        "Tinctury:T2",
+        "Druid:T1",
+        "Flawless Druid:T3",
+        "Supplier:T2",
+        "Scribe:T2"
       ],
       "usedIn": [
         "Pack of Crops",
@@ -1886,14 +1953,30 @@
     {
       "id": "Grain",
       "label": "Grain",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Hallowed SmallFarm:T0",
-        "SmallFarm:T0",
-        "Forager's Camp:T0",
-        "Primitive Forager's Camp:T0",
-        "Homestead:T0"
+        "Makeshift Post:T0",
+        "Field Kitchen:T0",
+        "Ranch:T1",
+        "Beanery:T3",
+        "Granary:T2",
+        "Grill:T1",
+        "Butcher:T2",
+        "Flawless Rain Mill:T3",
+        "Rain Mill:T3",
+        "Press:T3",
+        "Press:T1",
+        "Provisioner:T2",
+        "Stamping Mill:T2",
+        "Tea House:T2",
+        "Brewery:T3",
+        "Brewery:T1",
+        "Distillery:T2",
+        "Flawless Brewery:T3",
+        "Tinctury:T2",
+        "Druid:T3",
+        "Flawless Druid:T3",
+        "Supplier:T2",
+        "Scribe:T2"
       ],
       "usedIn": [
         "Pack of Crops",
@@ -1909,14 +1992,27 @@
     {
       "id": "Vegetables",
       "label": "Vegetables",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Hallowed SmallFarm:T0",
-        "SmallFarm:T0",
-        "Forager's Camp:T0",
-        "Primitive Forager's Camp:T0",
-        "Homestead:T0"
+        "Makeshift Post:T0",
+        "Field Kitchen:T0",
+        "Ranch:T1",
+        "Beanery:T3",
+        "Beanery:T1",
+        "Cookhouse:T2",
+        "Granary:T2",
+        "Brickyard:T1",
+        "Grill:T3",
+        "Butcher:T2",
+        "Cellar:T1",
+        "Flawless Cellar:T3",
+        "Press:T3",
+        "Alchemist Hut:T2",
+        "Tea House:T2",
+        "Brewery:T1",
+        "Distillery:T2",
+        "Flawless Brewery:T3",
+        "Druid:T3",
+        "Flawless Druid:T3"
       ],
       "usedIn": [
         "Pack of Crops",
@@ -1932,13 +2028,34 @@
     {
       "id": "Mushrooms",
       "label": "Mushrooms",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Herbalist's Camp:T0",
-        "Primitive Herbalist's Camp:T0",
-        "Greenhouse Workshop:T2",
-        "Homestead:T0"
+        "Makeshift Post:T0",
+        "Field Kitchen:T0",
+        "Cooperage:T1",
+        "Flawless Cooperage:T3",
+        "Beanery:T3",
+        "Beanery:T1",
+        "Cookhouse:T2",
+        "Granary:T2",
+        "Grill:T3",
+        "Butcher:T2",
+        "Cellar:T3",
+        "Cellar:T1",
+        "Flawless Cellar:T3",
+        "Flawless Rain Mill:T3",
+        "Rain Mill:T3",
+        "Press:T1",
+        "Provisioner:T2",
+        "Stamping Mill:T2",
+        "Alchemist Hut:T2",
+        "Apothecary:T2",
+        "Tea House:T3",
+        "Tea House:T2",
+        "Brewery:T1",
+        "Distillery:T2",
+        "Flawless Brewery:T3",
+        "Tinctury:T2",
+        "Supplier:T2"
       ],
       "usedIn": [
         "Pack of Crops",
@@ -1951,34 +2068,33 @@
       ]
     },
     {
-      "id": "Pack of Crops",
-      "label": "Pack of Crops",
-      "usesFirst": [
-        "Roots",
-        "Grain",
-        "Vegetables",
-        "Mushrooms"
-      ],
-      "usesSecond": [],
-      "producedBy": [
-        "Makeshift Post:T0",
-        "Granary:T2",
-        "Brewery:T1",
-        "Flawless Brewery:T3"
-      ],
-      "usedIn": []
-    },
-    {
       "id": "Herbs",
       "label": "Herbs",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Hallowed Herb Garden:T0",
-        "Herb Garden:T0",
-        "Herbalist's Camp:T0",
-        "Primitive Herbalist's Camp:T0",
-        "Greenhouse Workshop:T2"
+        "Makeshift Post:T0",
+        "Field Kitchen:T0",
+        "Cooperage:T1",
+        "Flawless Cooperage:T3",
+        "Bakery:T2",
+        "Beanery:T3",
+        "Beanery:T1",
+        "Cookhouse:T2",
+        "Smokehouse:T1",
+        "Brick Oven:T3",
+        "Brick Oven:T1",
+        "Brickyard:T1",
+        "Furnace:T2",
+        "Provisioner:T2",
+        "Flawless Smelter:T3",
+        "Smelter:T1",
+        "Alchemist Hut:T2",
+        "Apothecary:T2",
+        "Tea House:T3",
+        "Tea House:T2",
+        "Distillery:T2",
+        "Druid:T1",
+        "Flawless Druid:T3",
+        "Manufactory:T2"
       ],
       "usedIn": [
         "Pack of Provisions",
@@ -1993,12 +2109,33 @@
     {
       "id": "Berries",
       "label": "Berries",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Plantation:T0",
-        "Herbalist's Camp:T0",
-        "Primitive Herbalist's Camp:T0"
+        "Makeshift Post:T0",
+        "Field Kitchen:T0",
+        "Ranch:T1",
+        "Bakery:T2",
+        "Beanery:T1",
+        "Cookhouse:T2",
+        "Flawless Leatherworks:T3",
+        "Granary:T2",
+        "Leatherworks:T2",
+        "Brick Oven:T3",
+        "Grill:T3",
+        "Butcher:T2",
+        "Furnace:T2",
+        "Cellar:T3",
+        "Cellar:T1",
+        "Flawless Cellar:T3",
+        "Provisioner:T2",
+        "Flawless Smelter:T3",
+        "Smelter:T1",
+        "Alchemist Hut:T2",
+        "Apothecary:T2",
+        "Brewery:T1",
+        "Distillery:T2",
+        "Flawless Brewery:T3",
+        "Tinctury:T2",
+        "Manufactory:T2"
       ],
       "usedIn": [
         "Pack of Provisions",
@@ -2014,11 +2151,33 @@
     {
       "id": "Insects",
       "label": "Insects",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Trapper's Camp:T0",
-        "Primitive Trapper's Camp:T0"
+        "Makeshift Post:T0",
+        "Field Kitchen:T0",
+        "Ranch:T1",
+        "Bakery:T2",
+        "Beanery:T1",
+        "Cookhouse:T2",
+        "Smokehouse:T3",
+        "Smokehouse:T1",
+        "Flawless Leatherworks:T3",
+        "Leatherworks:T2",
+        "Brick Oven:T3",
+        "Brick Oven:T1",
+        "Brickyard:T1",
+        "Grill:T3",
+        "Kiln:T1",
+        "Butcher:T2",
+        "Furnace:T2",
+        "Cellar:T1",
+        "Flawless Cellar:T3",
+        "Provisioner:T2",
+        "Alchemist Hut:T2",
+        "Apothecary:T2",
+        "Tinctury:T2",
+        "Druid:T1",
+        "Flawless Druid:T3",
+        "Manufactory:T2"
       ],
       "usedIn": [
         "Pack of Provisions",
@@ -2034,12 +2193,29 @@
     {
       "id": "Meat",
       "label": "Meat",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Ranch:T1",
-        "Trapper's Camp:T0",
-        "Primitive Trapper's Camp:T0"
+        "Makeshift Post:T0",
+        "Field Kitchen:T0",
+        "Bakery:T2",
+        "Cookhouse:T2",
+        "Clothier:T1",
+        "Smokehouse:T3",
+        "Flawless Leatherworks:T3",
+        "Leatherworks:T3",
+        "Brick Oven:T3",
+        "Grill:T3",
+        "Kiln:T1",
+        "Butcher:T2",
+        "Furnace:T2",
+        "Cellar:T1",
+        "Flawless Cellar:T3",
+        "Press:T3",
+        "Provisioner:T2",
+        "Tea House:T1",
+        "Druid:T3",
+        "Flawless Druid:T3",
+        "Manufactory:T2",
+        "Supplier:T2"
       ],
       "usedIn": [
         "Pack of Provisions",
@@ -2053,12 +2229,23 @@
     {
       "id": "Eggs",
       "label": "Eggs",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Ranch:T1",
-        "Trapper's Camp:T0",
-        "Primitive Trapper's Camp:T0"
+        "Makeshift Post:T0",
+        "Field Kitchen:T0",
+        "Bakery:T2",
+        "Beanery:T1",
+        "Cookhouse:T2",
+        "Granary:T2",
+        "Brick Oven:T3",
+        "Grill:T3",
+        "Butcher:T2",
+        "Furnace:T2",
+        "Cellar:T1",
+        "Flawless Cellar:T3",
+        "Provisioner:T2",
+        "Brewery:T1",
+        "Flawless Brewery:T3",
+        "Manufactory:T2"
       ],
       "usedIn": [
         "Pack of Provisions",
@@ -2068,30 +2255,87 @@
       ]
     },
     {
-      "id": "Pack of Provisions",
-      "label": "Pack of Provisions",
-      "usesFirst": [
-        "Herbs",
-        "Berries",
-        "Insects",
-        "Meat",
-        "Eggs"
-      ],
-      "usesSecond": [],
+      "id": "Planks",
+      "label": "Planks",
       "producedBy": [
         "Makeshift Post:T0",
+        "Cooperage:T3",
+        "Flawless Cooperage:T3",
+        "Carpenter:T2",
+        "Weaver:T1",
+        "Flawless Rain Mill:T3",
+        "Rain Mill:T1",
         "Provisioner:T2",
-        "Manufactory:T2"
+        "Flawless Smelter:T3",
+        "Smelter:T2",
+        "Smithy:T2",
+        "Toolshop:T3",
+        "Toolshop:T1",
+        "Artisan:T2",
+        "Distillery:T2",
+        "Tinkerer:T2",
+        "Manufactory:T2",
+        "Scribe:T1",
+        "Finesmith:T3"
       ],
-      "usedIn": []
+      "usedIn": [
+        "Pack of Building Materials",
+        "Barrels",
+        "Tools",
+        "Training Gear"
+      ]
+    },
+    {
+      "id": "Fabric",
+      "label": "Fabric",
+      "producedBy": [
+        "Makeshift Post:T0",
+        "Cooperage:T2",
+        "Flawless Cooperage:T3",
+        "Clothier:T3",
+        "Flawless Rain Mill:T3",
+        "Rain Mill:T1",
+        "Artisan:T2",
+        "Druid:T1",
+        "Flawless Druid:T3",
+        "Tinkerer:T2"
+      ],
+      "usedIn": [
+        "Pack of Building Materials",
+        "Coats"
+      ]
+    },
+    {
+      "id": "Bricks",
+      "label": "Bricks",
+      "producedBy": [
+        "Makeshift Post:T0",
+        "Flawless Rain Mill:T3",
+        "Rain Mill:T1",
+        "Tinkerer:T2"
+      ],
+      "usedIn": [
+        "Pack of Building Materials"
+      ]
     },
     {
       "id": "Copper Ore",
       "label": "Copper Ore",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Mine:T0"
+        "Makeshift Post:T0",
+        "Cookhouse:T2",
+        "Flawless Leatherworks:T3",
+        "Leatherworks:T2",
+        "Grill:T1",
+        "Furnace:T2",
+        "Flawless Rain Mill:T3",
+        "Rain Mill:T1",
+        "Stamping Mill:T1",
+        "Flawless Smelter:T3",
+        "Smelter:T3",
+        "Tinctury:T2",
+        "Tinkerer:T2",
+        "Manufactory:T2"
       ],
       "usedIn": [
         "Pack of Building Materials",
@@ -2100,33 +2344,39 @@
       ]
     },
     {
-      "id": "Pack of Building Materials",
-      "label": "Pack of Building Materials",
-      "usesFirst": [
-        "Planks",
-        "Fabric",
-        "Bricks",
-        "Copper Ore"
-      ],
-      "usesSecond": [],
-      "producedBy": [
-        "Makeshift Post:T0",
-        "Flawless Rain Mill:T3",
-        "Rain Mill:T1",
-        "Tinkerer:T2"
-      ],
-      "usedIn": []
-    },
-    {
       "id": "Oil",
       "label": "Oil",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
+        "Blight Post:T0",
+        "Field Kitchen:T0",
+        "Lumbermill:T1",
+        "Bakery:T2",
+        "Weaver:T1",
+        "Clothier:T1",
+        "Smokehouse:T3",
+        "Smokehouse:T1",
+        "Flawless Leatherworks:T3",
+        "Leatherworks:T3",
+        "Brick Oven:T1",
+        "Brickyard:T2",
+        "Grill:T1",
+        "Kiln:T1",
         "Butcher:T2",
-        "Press:T3",
-        "Druid:T3",
-        "Flawless Druid:T3"
+        "Furnace:T2",
+        "Cellar:T1",
+        "Flawless Cellar:T3",
+        "Stamping Mill:T3",
+        "Stamping Mill:T1",
+        "Flawless Smelter:T3",
+        "Smelter:T3",
+        "Smithy:T2",
+        "Apothecary:T2",
+        "Tea House:T1",
+        "Druid:T1",
+        "Flawless Druid:T3",
+        "Supplier:T2",
+        "Finesmith:T0",
+        "Rainpunk Foundry:T0"
       ],
       "usedIn": [
         "Purging Fire",
@@ -2143,12 +2393,34 @@
     {
       "id": "Coal",
       "label": "Coal",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Mine:T0",
+        "Blight Post:T0",
+        "Field Kitchen:T0",
+        "Bakery:T2",
+        "Cookhouse:T2",
+        "Smokehouse:T3",
+        "Smokehouse:T1",
+        "Flawless Leatherworks:T3",
+        "Leatherworks:T2",
         "Brick Oven:T1",
-        "Kiln:T3"
+        "Brickyard:T2",
+        "Grill:T1",
+        "Kiln:T1",
+        "Butcher:T2",
+        "Furnace:T2",
+        "Cellar:T1",
+        "Flawless Cellar:T3",
+        "Stamping Mill:T3",
+        "Stamping Mill:T1",
+        "Flawless Smelter:T3",
+        "Smelter:T3",
+        "Apothecary:T2",
+        "Tinctury:T2",
+        "Druid:T1",
+        "Flawless Druid:T3",
+        "Manufactory:T2",
+        "Rainpunk Foundry:T0",
+        "Rainpunk Foundry:T3"
       ],
       "usedIn": [
         "Purging Fire",
@@ -2164,10 +2436,28 @@
     {
       "id": "Sea Marrow",
       "label": "Sea Marrow",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Stonecutter's Camp:T0"
+        "Blight Post:T0",
+        "Field Kitchen:T0",
+        "Bakery:T2",
+        "Smokehouse:T3",
+        "Smokehouse:T1",
+        "Brick Oven:T1",
+        "Brickyard:T2",
+        "Grill:T1",
+        "Kiln:T1",
+        "Butcher:T2",
+        "Furnace:T2",
+        "Cellar:T1",
+        "Flawless Cellar:T3",
+        "Stamping Mill:T3",
+        "Stamping Mill:T1",
+        "Flawless Smelter:T3",
+        "Smelter:T3",
+        "Apothecary:T2",
+        "Druid:T1",
+        "Flawless Druid:T3",
+        "Rainpunk Foundry:T0"
       ],
       "usedIn": [
         "Purging Fire",
@@ -2179,66 +2469,20 @@
       ]
     },
     {
-      "id": "Purging Fire",
-      "label": "Purging Fire",
-      "usesFirst": [
-        "Wood",
-        "Oil",
-        "Coal",
-        "Sea Marrow"
-      ],
-      "usesSecond": [],
-      "producedBy": [
-        "Blight Post:T0"
-      ],
-      "usedIn": []
-    },
-    {
-      "id": "Resin",
-      "label": "Resin",
-      "usesFirst": [],
-      "usesSecond": [],
-      "producedBy": [
-        "Grove:T0"
-      ],
-      "usedIn": [
-        "Tea",
-        "Crystalized Dew",
-        "Incense",
-        "Amber"
-      ]
-    },
-    {
-      "id": "Jerky",
-      "label": "Jerky",
-      "usesFirst": [
-        "Insects",
-        "Meat"
-      ],
-      "usesSecond": [
-        "Wood",
-        "Oil",
-        "Coal",
-        "Sea Marrow"
-      ],
-      "producedBy": [
-        "Field Kitchen:T0",
-        "Smokehouse:T3",
-        "Kiln:T1",
-        "Butcher:T2",
-        "Cellar:T1",
-        "Flawless Cellar:T3"
-      ],
-      "usedIn": [
-        "Skewers"
-      ]
-    },
-    {
       "id": "Drizzle Water",
       "label": "Drizzle Water",
-      "usesFirst": null,
-      "usesSecond": null,
-      "producedBy": [],
+      "producedBy": [
+        "Field Kitchen:T0",
+        "Cooperage:T1",
+        "Flawless Cooperage:T3",
+        "Beanery:T3",
+        "Greenhouse Workshop:T2",
+        "Alchemist Hut:T2",
+        "Apothecary:T2",
+        "Tea House:T3",
+        "Tea House:T2",
+        "Distillery:T2"
+      ],
       "usedIn": [
         "Porridge",
         "Tea",
@@ -2249,9 +2493,19 @@
     {
       "id": "Clearance Water",
       "label": "Clearance Water",
-      "usesFirst": null,
-      "usesSecond": null,
-      "producedBy": [],
+      "producedBy": [
+        "Field Kitchen:T0",
+        "Cooperage:T1",
+        "Flawless Cooperage:T3",
+        "Beanery:T3",
+        "Clay Pit Workshop:T2",
+        "Alchemist Hut:T2",
+        "Apothecary:T2",
+        "Tea House:T3",
+        "Tea House:T2",
+        "Distillery:T2",
+        "Finesmith:T0"
+      ],
       "usedIn": [
         "Porridge",
         "Tea",
@@ -2263,48 +2517,37 @@
     {
       "id": "Storm Water",
       "label": "Storm Water",
-      "usesFirst": null,
-      "usesSecond": null,
-      "producedBy": [],
+      "producedBy": [
+        "Field Kitchen:T0",
+        "Cooperage:T1",
+        "Flawless Cooperage:T3",
+        "Beanery:T3",
+        "Alchemist Hut:T2",
+        "Apothecary:T2",
+        "Tea House:T3",
+        "Tea House:T2",
+        "Distillery:T2"
+      ],
       "usedIn": [
         "Porridge",
         "Tea"
       ]
     },
     {
-      "id": "Porridge",
-      "label": "Porridge",
-      "usesFirst": [
-        "Grain",
-        "Vegetables",
-        "Mushrooms",
-        "Herbs"
-      ],
-      "usesSecond": [
-        "Drizzle Water",
-        "Clearance Water",
-        "Storm Water"
-      ],
-      "producedBy": [
-        "Field Kitchen:T0",
-        "Beanery:T3",
-        "Tea House:T2",
-        "Distillery:T2"
-      ],
-      "usedIn": []
-    },
-    {
       "id": "Flour",
       "label": "Flour",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Flawless Rain Mill:T3",
-        "Rain Mill:T3",
-        "Press:T1",
-        "Provisioner:T2",
-        "Stamping Mill:T2",
-        "Supplier:T2"
+        "Field Kitchen:T0",
+        "Lumbermill:T1",
+        "Bakery:T2",
+        "Cookhouse:T2",
+        "Weaver:T1",
+        "Brick Oven:T3",
+        "Furnace:T2",
+        "Flawless Smelter:T3",
+        "Smelter:T1",
+        "Smithy:T2",
+        "Apothecary:T2"
       ],
       "usedIn": [
         "Biscuits",
@@ -2313,36 +2556,26 @@
       ]
     },
     {
-      "id": "Biscuits",
-      "label": "Biscuits",
-      "usesFirst": [
-        "Flour"
-      ],
-      "usesSecond": [
-        "Herbs",
-        "Berries",
-        "Roots"
-      ],
-      "producedBy": [
-        "Field Kitchen:T0",
-        "Bakery:T2",
-        "Cookhouse:T2",
-        "Flawless Smelter:T3",
-        "Smelter:T1",
-        "Apothecary:T2"
-      ],
-      "usedIn": []
-    },
-    {
       "id": "Pottery",
       "label": "Pottery",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Bakery:T2",
-        "Smokehouse:T1",
-        "Brickyard:T2",
-        "Stamping Mill:T3"
+        "Field Kitchen:T0",
+        "Lumbermill:T1",
+        "Beanery:T1",
+        "Weaver:T1",
+        "Granary:T2",
+        "Grill:T1",
+        "Cellar:T3",
+        "Cellar:T1",
+        "Flawless Cellar:T3",
+        "Smithy:T2",
+        "Alchemist Hut:T2",
+        "Brewery:T3",
+        "Brewery:T1",
+        "Distillery:T2",
+        "Flawless Brewery:T3",
+        "Tinctury:T2",
+        "Scribe:T2"
       ],
       "usedIn": [
         "Pickled Goods",
@@ -2354,15 +2587,24 @@
     {
       "id": "Barrels",
       "label": "Barrels",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Cooperage:T3",
-        "Flawless Cooperage:T3",
-        "Provisioner:T2",
-        "Toolshop:T1",
-        "Artisan:T2",
-        "Distillery:T2"
+        "Field Kitchen:T0",
+        "Lumbermill:T1",
+        "Beanery:T1",
+        "Weaver:T1",
+        "Granary:T2",
+        "Grill:T1",
+        "Cellar:T3",
+        "Cellar:T1",
+        "Flawless Cellar:T3",
+        "Smithy:T2",
+        "Alchemist Hut:T2",
+        "Brewery:T3",
+        "Brewery:T1",
+        "Distillery:T2",
+        "Flawless Brewery:T3",
+        "Tinctury:T2",
+        "Scribe:T2"
       ],
       "usedIn": [
         "Pickled Goods",
@@ -2374,14 +2616,24 @@
     {
       "id": "Waterskins",
       "label": "Waterskins",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Clothier:T1",
-        "Flawless Leatherworks:T3",
-        "Leatherworks:T3",
-        "Tea House:T1",
-        "Supplier:T2"
+        "Field Kitchen:T0",
+        "Lumbermill:T1",
+        "Beanery:T1",
+        "Weaver:T1",
+        "Granary:T2",
+        "Grill:T1",
+        "Cellar:T3",
+        "Cellar:T1",
+        "Flawless Cellar:T3",
+        "Smithy:T2",
+        "Alchemist Hut:T2",
+        "Brewery:T3",
+        "Brewery:T1",
+        "Distillery:T2",
+        "Flawless Brewery:T3",
+        "Tinctury:T2",
+        "Scribe:T2"
       ],
       "usedIn": [
         "Pickled Goods",
@@ -2391,42 +2643,21 @@
       ]
     },
     {
-      "id": "Pickled Goods",
-      "label": "Pickled Goods",
-      "usesFirst": [
-        "Vegetables",
-        "Mushrooms",
-        "Roots",
-        "Berries",
-        "Eggs"
-      ],
-      "usesSecond": [
-        "Pottery",
-        "Barrels",
-        "Waterskins"
-      ],
-      "producedBy": [
-        "Field Kitchen:T0",
-        "Beanery:T1",
-        "Granary:T2",
-        "Cellar:T1",
-        "Flawless Cellar:T3",
-        "Brewery:T1",
-        "Flawless Brewery:T3"
-      ],
-      "usedIn": []
-    },
-    {
       "id": "Pigment",
       "label": "Pigment",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Cookhouse:T2",
-        "Flawless Leatherworks:T3",
-        "Leatherworks:T2",
-        "Tinctury:T2",
-        "Manufactory:T2"
+        "Lumbermill:T1",
+        "Cooperage:T1",
+        "Flawless Cooperage:T3",
+        "Weaver:T1",
+        "Clothier:T1",
+        "Flawless Rain Mill:T3",
+        "Rain Mill:T1",
+        "Smithy:T2",
+        "Alchemist Hut:T2",
+        "Apothecary:T2",
+        "Tea House:T3",
+        "Scribe:T3"
       ],
       "usedIn": [
         "Scrolls",
@@ -2437,14 +2668,15 @@
     {
       "id": "Wine",
       "label": "Wine",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Cellar:T3",
-        "Flawless Cellar:T3",
-        "Alchemist Hut:T2",
-        "Distillery:T2",
-        "Tinctury:T2"
+        "Lumbermill:T1",
+        "Carpenter:T2",
+        "Clothier:T1",
+        "Flawless Rain Mill:T3",
+        "Rain Mill:T1",
+        "Press:T1",
+        "Artisan:T2",
+        "Scribe:T3"
       ],
       "usedIn": [
         "Scrolls",
@@ -2452,142 +2684,36 @@
       ]
     },
     {
-      "id": "Scrolls",
-      "label": "Scrolls",
-      "usesFirst": [
-        "Leather",
-        "Plant Fiber",
-        "Wood"
-      ],
-      "usesSecond": [
-        "Pigment",
-        "Wine"
-      ],
-      "producedBy": [
-        "Lumbermill:T1",
-        "Clothier:T1",
-        "Flawless Rain Mill:T3",
-        "Rain Mill:T1",
-        "Scribe:T3"
-      ],
-      "usedIn": [
-        "Pack of Luxury Goods"
-      ]
-    },
-    {
-      "id": "Pack of Trade Goods",
-      "label": "Pack of Trade Goods",
-      "usesFirst": [
-        "Pigment",
-        "Oil",
-        "Flour",
-        "Pottery",
-        "Barrels",
-        "Waterskins"
-      ],
-      "usesSecond": [],
-      "producedBy": [
-        "Lumbermill:T1",
-        "Weaver:T1",
-        "Smithy:T2"
-      ],
-      "usedIn": []
-    },
-    {
-      "id": "Coats",
-      "label": "Coats",
-      "usesFirst": [
-        "Fabric"
-      ],
-      "usesSecond": [],
-      "producedBy": [
-        "Cooperage:T2",
-        "Flawless Cooperage:T3",
-        "Clothier:T3",
-        "Artisan:T2",
-        "Druid:T1",
-        "Flawless Druid:T3"
-      ],
-      "usedIn": []
-    },
-    {
-      "id": "Tea",
-      "label": "Tea",
-      "usesFirst": [
-        "Herbs",
-        "Pigment",
-        "Resin",
-        "Mushrooms",
-        "Roots"
-      ],
-      "usesSecond": [
-        "Drizzle Water",
-        "Clearance Water",
-        "Storm Water"
-      ],
+      "id": "Resin",
+      "label": "Resin",
       "producedBy": [
         "Cooperage:T1",
         "Flawless Cooperage:T3",
+        "Beanery:T1",
+        "Smokehouse:T1",
+        "Brick Oven:T1",
+        "Brickyard:T1",
         "Alchemist Hut:T2",
         "Apothecary:T2",
-        "Tea House:T3"
+        "Tea House:T3",
+        "Druid:T1",
+        "Flawless Druid:T3",
+        "Finesmith:T0"
       ],
       "usedIn": [
-        "Pack of Luxury Goods"
+        "Tea",
+        "Crystalized Dew",
+        "Incense",
+        "Amber"
       ]
-    },
-    {
-      "id": "Pie",
-      "label": "Pie",
-      "usesFirst": [
-        "Flour"
-      ],
-      "usesSecond": [
-        "Herbs",
-        "Meat",
-        "Insects",
-        "Eggs",
-        "Berries"
-      ],
-      "producedBy": [
-        "Bakery:T2",
-        "Brick Oven:T3",
-        "Furnace:T2"
-      ],
-      "usedIn": []
-    },
-    {
-      "id": "Tools",
-      "label": "Tools",
-      "usesFirst": [
-        "Wood",
-        "Planks"
-      ],
-      "usesSecond": [
-        "Copper Bars",
-        "Crystalized Dew"
-      ],
-      "producedBy": [
-        "Carpenter:T2",
-        "Smithy:T2",
-        "Toolshop:T3",
-        "Tinkerer:T2",
-        "Scribe:T1",
-        "Finesmith:T3"
-      ],
-      "usedIn": []
     },
     {
       "id": "Training Gear",
       "label": "Training Gear",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Weaver:T1",
-        "Flawless Smelter:T3",
-        "Smelter:T2",
-        "Tinkerer:T2",
-        "Manufactory:T2"
+        "Carpenter:T2",
+        "Press:T1",
+        "Artisan:T2"
       ],
       "usedIn": [
         "Pack of Luxury Goods"
@@ -2596,14 +2722,22 @@
     {
       "id": "Incense",
       "label": "Incense",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Smokehouse:T1",
-        "Brick Oven:T1",
-        "Apothecary:T2",
-        "Druid:T1",
-        "Flawless Druid:T3"
+        "Carpenter:T2",
+        "Press:T1",
+        "Artisan:T2"
+      ],
+      "usedIn": [
+        "Pack of Luxury Goods"
+      ]
+    },
+    {
+      "id": "Scrolls",
+      "label": "Scrolls",
+      "producedBy": [
+        "Carpenter:T2",
+        "Press:T1",
+        "Artisan:T2"
       ],
       "usedIn": [
         "Pack of Luxury Goods"
@@ -2612,109 +2746,38 @@
     {
       "id": "Ale",
       "label": "Ale",
-      "usesFirst": null,
-      "usesSecond": null,
       "producedBy": [
-        "Grill:T1",
-        "Brewery:T3",
-        "Flawless Brewery:T3",
-        "Tinctury:T2",
-        "Scribe:T2"
+        "Carpenter:T2",
+        "Press:T1",
+        "Artisan:T2"
       ],
       "usedIn": [
         "Pack of Luxury Goods"
       ]
     },
     {
-      "id": "Pack of Luxury Goods",
-      "label": "Pack of Luxury Goods",
-      "usesFirst": [
-        "Wine",
-        "Training Gear",
-        "Incense",
-        "Scrolls",
-        "Ale",
-        "Tea"
-      ],
-      "usesSecond": [],
+      "id": "Tea",
+      "label": "Tea",
       "producedBy": [
         "Carpenter:T2",
         "Press:T1",
         "Artisan:T2"
       ],
-      "usedIn": []
+      "usedIn": [
+        "Pack of Luxury Goods"
+      ]
     },
     {
-      "id": "Skewers",
-      "label": "Skewers",
-      "usesFirst": [
-        "Insects",
-        "Meat",
-        "Mushrooms",
-        "Jerky"
-      ],
-      "usesSecond": [
-        "Vegetables",
-        "Roots",
-        "Berries",
-        "Eggs"
-      ],
+      "id": "Jerky",
+      "label": "Jerky",
       "producedBy": [
         "Cookhouse:T2",
         "Grill:T3",
         "Butcher:T2"
       ],
-      "usedIn": []
-    },
-    {
-      "id": "Amber",
-      "label": "Amber",
-      "usesFirst": [
-        "Resin"
-      ],
-      "usesSecond": [
-        "Clearance Water",
-        "Oil"
-      ],
-      "producedBy": [
-        "Finesmith:T0"
-      ],
-      "usedIn": []
-    },
-    {
-      "id": "Parts",
-      "label": "Parts",
-      "usesFirst": [
-        "Copper Bars",
-        "Crystalized Dew",
-        "Stone",
-        "Clay"
-      ],
-      "usesSecond": [
-        "Coal",
-        "Sea Marrow",
-        "Oil",
-        "Wood"
-      ],
-      "producedBy": [
-        "Rainpunk Foundry:T0"
-      ],
-      "usedIn": []
-    },
-    {
-      "id": "Wildfire Essence",
-      "label": "Wildfire Essence",
-      "usesFirst": [
-        "Coal"
-      ],
-      "usesSecond": [
-        "Copper Bars",
-        "Crystalized Dew"
-      ],
-      "producedBy": [
-        "Rainpunk Foundry:T3"
-      ],
-      "usedIn": []
+      "usedIn": [
+        "Skewers"
+      ]
     }
   ],
   "buildings": [
