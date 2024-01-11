@@ -1,0 +1,96 @@
+{
+	"recipes": [
+		{
+			"id": "Clay->Pottery",
+            "source": "Clay",
+            "target": "Pottery",
+            "3TR": "2:5|84s",
+            "2TR": "3:5|84s",
+            "1TR": "4:5|84s",
+			"0TR": null,
+            "size": 4
+		},
+		{
+			"id": "Wood->Pottery",
+            "source": "Wood",
+            "target": "Pottery",
+            "3TR": "5:5|84s",
+            "2TR": "5:5|84s",
+            "1TR": "5:5|84s",
+			"0TR": null,
+            "size": 4
+		},
+		{
+			"id": "Coal->Pottery",
+            "source": "Coal",
+            "target": "Pottery",
+            "3TR": "1:5|84s",
+            "2TR": "1:5|84s",
+            "1TR": "1:5|84s",
+			"0TR": null,
+            "size": 4
+		},
+		{
+			"id": "Wood->Coal",
+            "source": "Wood",
+            "target": "Coal",
+            "3TR": "5:1|60s",
+            "2TR": "5:1|60s",
+            "1TR": "5:1|60s",
+			"0TR": null,
+            "size": 4
+		}
+	],
+	"goods": [
+		{
+            "id": "Coal",
+            "label": "Coal",
+			"producedBy": ["Smokehouse:T2"],
+			"usedIn": ["Pottery"]
+		},
+		{
+			"id": "Clay",
+			"label": "Clay",
+			"producedBy": [],
+			"usedIn": ["Pottery"]
+		},
+		{
+			"id": "Wood",
+			"label": "Wood",
+			"producedBy": [],
+			"usedIn": ["Pottery"]
+		},
+		{
+			"id": "Pottery",
+			"label": "Pottery",
+			"producedBy": ["Smokehouse:T1", "Brickyard:T2", "Bakery:T2", "Stamping Mill:T3"],
+			"usedIn": []
+		}
+	],
+	"buildings": [
+		{
+			"id": "Smokehouse",
+			"label": "Smokehouse",
+			"recipes": [
+				{
+					"good": "Pottery",
+					"tier": 1
+				},
+				{
+					"good": "Coal",
+					"tier": 2
+				}
+			]
+		},
+		{
+			"id": "Stamping Mill",
+			"label": "Stamping Mill",
+			"recipes": [
+				{
+					"good": "Pottery",
+					"tier": 3
+				}
+			]
+		}
+	]
+}

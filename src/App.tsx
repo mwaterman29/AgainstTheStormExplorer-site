@@ -1,9 +1,14 @@
 import { useState } from 'react'
 import './App.css'
-import GoodsGraphComponent from './components/GoodsGraphComponent'
 import { GraphCanvas, GraphCanvasRef, GraphCanvasProps} from 'reagraph';
 import { FunctionComponent, RefObject } from 'react';
 import { useRef } from 'react';
+
+//Components
+import GoodsGraph from './components/GoodsGraph'
+import InfoPanel from './components/InfoPanel'
+
+//Data
 
 function App() {
 
@@ -18,13 +23,25 @@ function App() {
   */
 
   const graphRef = useRef<GraphCanvasRef | null>(null);
+  const [selected, setSelected] = useState({
+    type: '',
+    id: ''
+  })
 
   function onClickNode(node: any) {
     console.log(node);
+    setSelected({
+      type: 'good',
+      id: node.id
+    })
   }
   
   function onClickEdge(edge: any) {
     console.log(edge);
+    setSelected({
+      type: 'recipe',
+      id: edge.id
+    })
   }
 
   return (
@@ -36,14 +53,17 @@ function App() {
       <div className='bg-blue-950 h-[80%] w-full p-2'>
         <div className='flex flex-row relative h-full w-full'>
           <div className='relative h-full w-3/4 mr-2'>
-            <GoodsGraphComponent 
+            <GoodsGraph
                 graphRef={graphRef}
                 onClickNode={onClickNode}
                 onClickEdge={onClickEdge}
               />
           </div>
-          <div className='h-full w-1/4 p-2 bg-slate-500'>
-            info panel goes here
+          <div className='h-full w-1/4 p-2'>
+            <InfoPanel
+              type={selected.type}
+              id={selected.id}
+             />
           </div>
         </div>
 

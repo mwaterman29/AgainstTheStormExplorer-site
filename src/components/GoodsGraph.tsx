@@ -2,7 +2,11 @@ import React, {useRef} from 'react';
 import { GraphCanvas, GraphCanvasRef, GraphCanvasProps} from 'reagraph';
 import { FunctionComponent, RefObject } from 'react';
 
-const GoodsGraphComponent: FunctionComponent<{graphRef: RefObject<GraphCanvasRef>, onClickNode: any, onClickEdge: any}> = props => {
+//Data
+import * as data from '../data/small.json';
+
+
+const GoodsGraph: FunctionComponent<{graphRef: RefObject<GraphCanvasRef>, onClickNode: any, onClickEdge: any}> = props => {
 
     const testNodes = [
         {
@@ -36,7 +40,7 @@ const GoodsGraphComponent: FunctionComponent<{graphRef: RefObject<GraphCanvasRef
             'id': "Clay->Pottery",
             'source': "Clay",
             'target': "Pottery",
-            '3TR': '2:5',
+            '3TR': '2:5x10s',
             '2TR': '3:5',
             '1TR': '4:5',
             'size': 4,
@@ -48,8 +52,8 @@ const GoodsGraphComponent: FunctionComponent<{graphRef: RefObject<GraphCanvasRef
             ref={props.graphRef}
             onNodeClick={props.onClickNode}
             onEdgeClick={props.onClickEdge}
-            nodes={testNodes}
-            edges={testEdges}
+            nodes={data.goods}
+            edges={data.recipes}
 
             //Visuals
             edgeArrowPosition='mid'
@@ -57,4 +61,4 @@ const GoodsGraphComponent: FunctionComponent<{graphRef: RefObject<GraphCanvasRef
     )
 }
 
-export default GoodsGraphComponent;
+export default GoodsGraph;
