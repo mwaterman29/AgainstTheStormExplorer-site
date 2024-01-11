@@ -1,17 +1,17 @@
 import React from 'react';
 import { FunctionComponent, RefObject } from 'react';
 
-import * as data from '../data/small.json';
+import * as data from '../data/data.json';
 
 interface Recipe {
     id: string;
     source: string;
     target: string;
-    "3TR": string;
-    "2TR": string;
-    "1TR": string;
-    "0TR": null;
-    size: number;
+    "RT3": string;
+    "RT2": string;
+    "RT1": string;
+    "RT0": string;
+    //size: number;
     [key: string]: any; // Add this line
   }
 
@@ -54,20 +54,22 @@ const InfoPanel: FunctionComponent<{type: string, id: string}> = selected => {
     else if(selected.type === 'recipe')
     {
         const recipe = data.recipes.find(recipe => recipe.id === selected.id) as Recipe;
+        console.log(selected.id);
+        console.log(recipe);
 
-        if(!recipe)
+        if(recipe == null)
             return (<></>)
         return (
             <div className='flex flex-col w-full h-full bg-slate-500 p-2 gap-1'>
                 <p className='text-2xl'>{recipe?.id}</p>
                 {[...Array(4)].map((_, i) => {
                     const starRating = 3 - i;
-                    const starKey = `${starRating}TR`;
+                    const starKey = `RT${starRating}`;
                     if (recipe[starKey]) {
                         return (
                             <div key={starKey}>
                                 <p>{'★'.repeat(starRating) + '☆'.repeat(3 - starRating)}</p>
-                                <p>{recipe[starKey].split("|")[0].split(":")[0]} {recipe.source} {'->'} {recipe[starKey].split("|")[0].split(":")[1]} {recipe.target} in {recipe[starKey].split("|")[1]} </p>
+                                <p>{recipe[starKey].split("|")[0].split(":")[0]} {recipe.source} {'->'} {recipe[starKey].split("|")[0].split(":")[1]} {recipe.target} in {recipe[starKey].split("|")[1]} seconds </p>
                             </div>
                         );
                     }

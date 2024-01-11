@@ -3,8 +3,7 @@ import { GraphCanvas, GraphCanvasRef, GraphCanvasProps} from 'reagraph';
 import { FunctionComponent, RefObject } from 'react';
 
 //Data
-import * as data from '../data/small.json';
-
+import * as data from '../data/data.json';
 
 const GoodsGraph: FunctionComponent<{graphRef: RefObject<GraphCanvasRef>, onClickNode: any, onClickEdge: any}> = props => {
 
