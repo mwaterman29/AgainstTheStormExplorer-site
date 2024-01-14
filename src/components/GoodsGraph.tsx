@@ -78,7 +78,7 @@ const GoodsGraph: FunctionComponent<{graphRef: RefObject<GraphCanvasRef>, onClic
                 const texture = useLoader(THREE.TextureLoader, berries)
                 return (
                     <group>
-                        <mesh>
+                        <mesh position={[0, 0, 5]}>
                             <circleGeometry attach="geometry" args={[props.size, 32]}  />
                             <meshBasicMaterial
                                 attach="material"
