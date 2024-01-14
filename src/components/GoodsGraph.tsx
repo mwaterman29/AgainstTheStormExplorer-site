@@ -1,12 +1,8 @@
-import React, {useRef} from 'react';
-import { GraphCanvas, GraphCanvasRef, GraphCanvasProps, NodeRenderer, NodeRendererProps} from 'reagraph';
+import { GraphCanvas, GraphCanvasRef, GraphCanvasProps, NodeRenderer, NodeRendererProps, useSelection, lightTheme, darkTheme} from 'reagraph';
 import { FunctionComponent, RefObject } from 'react';
-import { ThreeElements, ReactThreeFiber } from '@react-three/fiber';
 import * as THREE from 'three';
-import berries from '../assets/berries.png'
 import { Canvas, useLoader } from '@react-three/fiber';
 
-import { extend } from '@react-three/fiber'
 
 
 
@@ -15,72 +11,28 @@ import * as data from '../data/data.json';
 
 const GoodsGraph: FunctionComponent<{graphRef: RefObject<GraphCanvasRef>, onClickNode: any, onClickEdge: any}> = props => {
 
-    const testNodes = [
-        {
-            'id': "Pottery",
-            'label': "Pottery",
-        },        
-        {
-            'id': "Clay",
-            'label': "Clay",
-        },
-        {
-            'id': "Wood",
-            'label': "Wood",
-        },
-        {
-            'id': "Oil",
-            'label': "Oil",
-        },
-        {
-            'id': "Coal",
-            'label': "Coal",
-        },
-        {
-            'id': "Sea Marrow",
-            'label': "Sea Marrow",
-        },
-    ]
-
-    const testEdges = [
-        {
-            'id': "Clay->Pottery",
-            'source': "Clay",
-            'target': "Pottery",
-            '3TR': '2:5x10s',
-            '2TR': '3:5',
-            '1TR': '4:5',
-            'size': 4,
-        }
-    ]
-
-    function Image() {
-        const texture = useLoader(THREE.TextureLoader, berries)
-        return (
-          <mesh>
-            <planeBufferGeometry attach="geometry" args={[3, 3]} />
-            <meshBasicMaterial attach="material" map={texture} />
-          </mesh>
-        )
-      }
-
     return (
         <GraphCanvas
             ref={props.graphRef}
             onNodeClick={props.onClickNode}
             onEdgeClick={props.onClickEdge}
             nodes={data.goods}
-            edges={data.recipes}
+            edges={data.recipes}            
 
-            //Visuals
+            //Visuals -- going to have to manually handle 
+
             edgeArrowPosition='mid'
             renderNode={(props: NodeRendererProps) => {
 
+
                 const baseUrl = import.meta.env.BASE_URL;
-                const imageUri = baseUrl + 'public/' + 'icons/' + props.id + '.png';
+                const imageUri = baseUrl + 'icons/' + props.id + '.png';
                 const encodedUri = encodeURI(imageUri);
 
                 const texture = useLoader(THREE.TextureLoader, encodedUri)
+
+                let color = new THREE.Color("#FFFFFF");
+
                 return (
                     <group>
                         <mesh position={[0, 0, 5]}>
@@ -88,7 +40,8 @@ const GoodsGraph: FunctionComponent<{graphRef: RefObject<GraphCanvasRef>, onClic
                             <meshBasicMaterial
                                 attach="material"
                                 map={texture} // apply the texture
-                                color={props.color}
+                                //color={props.color}
+                                color={color}
                                 opacity={props.opacity}
                                 transparent
                             />
@@ -96,6 +49,15 @@ const GoodsGraph: FunctionComponent<{graphRef: RefObject<GraphCanvasRef>, onClic
                   </group>
                 )
             }}
+
+            /*
+            theme={{
+                ...lightTheme,
+                node: {
+                    ...lightTheme.node,
+                }
+            }}
+            */
         />
     )
 }
