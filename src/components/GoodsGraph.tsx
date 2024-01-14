@@ -1,7 +1,7 @@
-import { GraphCanvas, GraphCanvasRef, GraphCanvasProps, NodeRenderer, NodeRendererProps, GraphNode, GraphEdge, useSelection, lightTheme, darkTheme} from 'reagraph';
+import { GraphCanvas, GraphCanvasRef, NodeRendererProps} from 'reagraph';
 import { FunctionComponent, RefObject, useEffect, useState } from 'react';
 import * as THREE from 'three';
-import { Canvas, useLoader } from '@react-three/fiber';
+import { useLoader } from '@react-three/fiber';
 
 //Data
 import * as data from '../data/data.json';
