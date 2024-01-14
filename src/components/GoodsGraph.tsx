@@ -75,7 +75,12 @@ const GoodsGraph: FunctionComponent<{graphRef: RefObject<GraphCanvasRef>, onClic
             //Visuals
             edgeArrowPosition='mid'
             renderNode={(props: NodeRendererProps) => {
-                const texture = useLoader(THREE.TextureLoader, berries)
+
+                const baseUrl = import.meta.env.BASE_URL;
+                const imageUri = baseUrl + 'public/' + 'icons/' + props.id + '.png';
+                const encodedUri = encodeURI(imageUri);
+
+                const texture = useLoader(THREE.TextureLoader, encodedUri)
                 return (
                     <group>
                         <mesh position={[0, 0, 5]}>
