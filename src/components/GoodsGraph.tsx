@@ -1,6 +1,14 @@
 import React, {useRef} from 'react';
-import { GraphCanvas, GraphCanvasRef, GraphCanvasProps} from 'reagraph';
+import { GraphCanvas, GraphCanvasRef, GraphCanvasProps, NodeRenderer, NodeRendererProps} from 'reagraph';
 import { FunctionComponent, RefObject } from 'react';
+import { ThreeElements, ReactThreeFiber } from '@react-three/fiber';
+import * as THREE from 'three';
+import berries from '../assets/berries.png'
+import { Canvas, useLoader } from '@react-three/fiber';
+
+import { extend } from '@react-three/fiber'
+
+
 
 //Data
 import * as data from '../data/data.json';
@@ -46,6 +54,16 @@ const GoodsGraph: FunctionComponent<{graphRef: RefObject<GraphCanvasRef>, onClic
         }
     ]
 
+    function Image() {
+        const texture = useLoader(THREE.TextureLoader, berries)
+        return (
+          <mesh>
+            <planeBufferGeometry attach="geometry" args={[3, 3]} />
+            <meshBasicMaterial attach="material" map={texture} />
+          </mesh>
+        )
+      }
+
     return (
         <GraphCanvas
             ref={props.graphRef}
@@ -56,6 +74,23 @@ const GoodsGraph: FunctionComponent<{graphRef: RefObject<GraphCanvasRef>, onClic
 
             //Visuals
             edgeArrowPosition='mid'
+            renderNode={(props: NodeRendererProps) => {
+                const texture = useLoader(THREE.TextureLoader, berries)
+                return (
+                    <group>
+                        <mesh>
+                            <circleGeometry attach="geometry" args={[props.size, 32]}  />
+                            <meshBasicMaterial
+                                attach="material"
+                                map={texture} // apply the texture
+                                color={props.color}
+                                opacity={props.opacity}
+                                transparent
+                            />
+                        </mesh>
+                  </group>
+                )
+            }}
         />
     )
 }
