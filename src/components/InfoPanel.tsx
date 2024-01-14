@@ -1,5 +1,4 @@
-import React from 'react';
-import { FunctionComponent, RefObject } from 'react';
+import { FunctionComponent } from 'react';
 
 import * as data from '../data/data.json';
 

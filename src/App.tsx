@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { GraphCanvas, GraphCanvasRef, GraphCanvasProps} from 'reagraph';
-import { FunctionComponent, RefObject } from 'react';
+import { GraphCanvasRef,} from 'reagraph';
 import { useRef } from 'react';
 
 //Components
