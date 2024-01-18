@@ -1,5 +1,5 @@
-import { GraphCanvas, GraphCanvasRef, NodeRendererProps, getCurve, getMidPoint, getVector } from 'reagraph';
-import { FunctionComponent, RefObject, useEffect, useState } from 'react';
+import { GraphCanvas, GraphCanvasRef, NodeRendererProps, getCurve, getVector } from 'reagraph';
+import { FunctionComponent, RefObject } from 'react';
 import * as THREE from 'three';
 import { useLoader } from '@react-three/fiber';
 
