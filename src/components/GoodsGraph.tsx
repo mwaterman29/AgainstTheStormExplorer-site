@@ -1,4 +1,4 @@
-import { GraphCanvas, GraphCanvasRef, NodeRendererProps, getCurve, getMidPoint, getVector, get } from 'reagraph';
+import { GraphCanvas, GraphCanvasRef, NodeRendererProps, getCurve, getMidPoint, getVector } from 'reagraph';
 import { FunctionComponent, RefObject, useEffect, useState } from 'react';
 import * as THREE from 'three';
 import { useLoader } from '@react-three/fiber';
@@ -78,16 +78,6 @@ const GoodsGraph: FunctionComponent<{
                 return (
                     <group>
                         { // Lines
-                        }
-
-                        {precursor &&
-                            <mesh>
-                                <tubeGeometry attach="geometry" args={[precursorCurve, 20, 4, 5]}  />
-                                <meshBasicMaterial
-                                    attach="material"
-                                    color={precursorColor}
-                                />
-                            </mesh>
                         }
 
                         {//Selection highlighting 
