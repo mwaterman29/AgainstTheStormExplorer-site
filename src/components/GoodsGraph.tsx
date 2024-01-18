@@ -6,40 +6,39 @@ import { useLoader } from '@react-three/fiber';
 //Data
 import * as data from '../data/data.json';
 
-const GoodsGraph: FunctionComponent<{graphRef: RefObject<GraphCanvasRef>, onClickNode: any, onClickEdge: any}> = props => {
+const GoodsGraph: FunctionComponent<{
+    graphRef: RefObject<GraphCanvasRef>,
+    onClickNode: any, 
+    onClickEdge: any, 
+    selected: {type: string, id: string}, 
+    precursors: string[], 
+    successors: string[]}> = graphProps => 
+    {
 
-    const [selected, setSelected] = useState<string>();
-    const [precursors, setPrecursors] = useState<string[]>();
-    const [successors, setSuccessors] = useState<string[]>();
-
+    /*
     useEffect(() => {
         console.log(selected);
         console.log(precursors);
         console.log(successors); 
     }, [selected, precursors, successors]);
+    */
 
     return (
         <GraphCanvas
-            ref={props.graphRef}
-            onNodeClick={
-                (node, collapseProps) => {
-                    //Call passed onClick
-                    props.onClickNode(node, collapseProps);
-
-                    //Update internal state of selection
-                    setSelected(node.id);
-                    setPrecursors(data.goods.filter(good => good.usedIn?.includes(node.id)).map(good => good.id));
-                    setSuccessors(data.goods.filter(good => good.usesFirst?.includes(node.id) || good.usesSecond?.includes(node.id)).map(good => good.id));
-                    
-                }}
-            onEdgeClick={props.onClickEdge}
+            ref={graphProps.graphRef}
+            onNodeClick={graphProps.onClickNode}
+            onEdgeClick={graphProps.onClickEdge}
             nodes={data.goods}
             edges={data.recipes}            
 
             //Visuals -- going to have to manually handle 
+            // edges drawn by: https://github.com/reaviz/reagraph/blob/c95b8c96b90ea7383ce2eade74a91aa08e746787/src/symbols/edges/useEdgeGeometry.ts#L33
 
             edgeArrowPosition='mid'
             renderNode={(props: NodeRendererProps) => {
+
+                //console.log(graphProps.graphRef.current?.getGraph());
+                console.log(props.node.position.x, props.node.position.y);
 
                 const baseUrl = import.meta.env.BASE_URL;
                 const imageUri = baseUrl + 'icons/' + props.id + '.png';
@@ -48,13 +47,15 @@ const GoodsGraph: FunctionComponent<{graphRef: RefObject<GraphCanvasRef>, onClic
                 const texture = useLoader(THREE.TextureLoader, encodedUri)
 
                 let color = new THREE.Color("#FFFFFF");
-                let selectionColor = new THREE.Color("#00DD00");
-                let precursorColor = new THREE.Color("#FFAAAA");
-                let successorColor = new THREE.Color("#AAFFAA");
+                let selectionColor = new THREE.Color("#0000DD");
+                let precursorColor = new THREE.Color("#DD0000");
+                let successorColor = new THREE.Color("#00DD00");
+
+                
 
                 return (
                     <group>
-                        {selected == props.node.id &&
+                        {graphProps.selected.id == props.node.id &&
                             <mesh position={[0, 0, 5]}>
                                 <circleGeometry attach="geometry" args={[props.size + 3, 32]}  />
                                 <meshBasicMaterial
@@ -63,7 +64,7 @@ const GoodsGraph: FunctionComponent<{graphRef: RefObject<GraphCanvasRef>, onClic
                                 />
                             </mesh>
                         }
-                        {precursors?.includes(props.id) &&
+                        {graphProps.precursors?.includes(props.id) &&
                             <mesh position={[0, 0, 5]}>
                                 <circleGeometry attach="geometry" args={[props.size + 3, 32]}  />
                                 <meshBasicMaterial
@@ -72,7 +73,7 @@ const GoodsGraph: FunctionComponent<{graphRef: RefObject<GraphCanvasRef>, onClic
                                 />
                             </mesh>
                         }
-                        {successors?.includes(props.id) &&
+                        {graphProps.successors?.includes(props.id) &&
                             <mesh position={[0, 0, 5]}>
                                 <circleGeometry attach="geometry" args={[props.size + 3, 32]}  />
                                 <meshBasicMaterial
@@ -92,6 +93,7 @@ const GoodsGraph: FunctionComponent<{graphRef: RefObject<GraphCanvasRef>, onClic
                                 transparent
                             />
                         </mesh>
+                        
                   </group>
                 )
             }}

@@ -6,6 +6,7 @@ import { useRef } from 'react';
 //Components
 import GoodsGraph from './components/GoodsGraph'
 import InfoPanel from './components/InfoPanel'
+import * as data from './data/data.json';
 
 //Data
 
@@ -26,10 +27,12 @@ function App() {
     type: '',
     id: ''
   })
+  const [precursors, setPrecursors] = useState<string[]>([]);
+  const [successors, setSuccessors] = useState<string[]>([]);
 
   function onClickNode(node: any) {
     console.log(node);
-    setSelected({
+    updateSelected({
       type: 'good',
       id: node.id
     })
@@ -37,13 +40,15 @@ function App() {
   
   function onClickEdge(edge: any) {
     console.log(edge);
-    setSelected({
+    updateSelected({
       type: 'recipe',
       id: edge.id
     })
   }
 
   function updateSelected(selected: any) {
+    setPrecursors(data.goods.filter(good => good.usedIn?.includes(selected.id)).map(good => good.id));
+    setSuccessors(data.goods.filter(good => good.usesFirst?.includes(selected.id) || good.usesSecond?.includes(selected.id)).map(good => good.id));
     setSelected(selected);
   }
 
@@ -60,6 +65,9 @@ function App() {
                 graphRef={graphRef}
                 onClickNode={onClickNode}
                 onClickEdge={onClickEdge}
+                selected={selected}
+                precursors={precursors}
+                successors={successors}
               />
           </div>
           <div className='h-full w-1/4 p-2'>
